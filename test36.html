@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      .container {
+        background-color: antiquewhite;
+      }
+      .box {
+        width: 250px;
+        height: 250px;
+        background-color: brown;
+        position: relative;
+        animation-name: Sheri;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        
+      }
+      @keyframes Sheri {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+            background-color: rgb(182, 123, 123);
+          top: 0px;
+          left: 250px;
+        }
+        50% {
+            background-color: blueviolet;
+          top: 250px;
+          left: 250px;
+        }
+        75% {
+            background-color: rgb(255, 127, 249);
+          top: 250px;
+          left: 0px;
+        }
+        100% {
+            background-color: chocolate;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

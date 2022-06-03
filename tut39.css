@@ -1,0 +1,209 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root{--navbar-height: 59px}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative ;
+    top: 0;
+}
+#navbar::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 67%;
+    width: 100%;
+    background-color: rgb(51, 35, 13);
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation Bar logo and image */
+#logo{
+    margin: 35px 45px;
+}
+#logo img{
+    height: 80px;
+    margin: -34px -22px;
+    border-radius: 90px;
+}
+/* Navigation Bar List styling */
+#navbar ul{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+   color: aliceblue;
+   display: block;
+   padding: 2px 20px;
+   border-radius: 30px;
+   text-decoration: none;
+   transition: all .7s;
+}
+#navbar ul li a:hover{
+   color: burlywood;
+   background-color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 343px;
+    padding: 3px 180px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://wallpaperaccess.com/full/2316549.jpg) no-repeat center center/cover;
+    height: 1005px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(31, 24, 5);
+}
+#home h1{
+    font-family: 'Italianno', cursive;
+    color: rgb(31, 24, 5);
+    text-align: center;
+}
+/* Services Section */
+#services{ 
+    display: flex;
+    margin: 34px 27px;
+}
+#services .box{
+    border: 2px solid rgb(51, 35, 13);
+    padding: 35px;
+    margin: 9px 10px;
+    border-radius: 25px;
+    background-color: burlywood;
+    width: fit-content;
+    text-align: justify;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Lato', sans-serif;
+}
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://www.mothering.com/attachments/black-bean-brownie-recipe-jpg.121317/) no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+   height: 120px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/* ContactSection */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://legal.brightnord.com/img/contact-about.jpg?v=2)
+}
+#Contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#Contact-box form{
+    width: 40%;
+}
+#Contact-box form label{
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+#Contact-box input,
+#Contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin:6px -2px ;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+}
+
+/* utility classes */
+
+.h-primary{
+    font-family: 'Italianno', cursive;
+    font-size: 2.8rem;
+    padding: 29px;
+}
+.h-secondary{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.btn{
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color:rgb(31, 24, 5);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .5s ease-out 0s ;
+}
+.btn:hover{
+    color: black;
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+.center{
+    text-align: center;
+}

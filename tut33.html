@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <style>
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            flex-wrap: wrap;
+
+        }
+        .navigation{
+            display: flex;
+            font-size: 30px;
+        }
+        .navigation :hover{
+            color: aquamarine;
+            cursor: pointer;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            display: flex;
+            margin: 3px 280px;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 244px;
+            justify-content: center;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1.3em;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>In qualitative research, coding is “how you define what the data you are analysing are about” (Gibbs, 2007). Coding is a process of identifying a passage in the text or other data items (photograph, image), searching and identifying concepts and finding relations between them.
+        </p>
+    </section>
+</body> 
+</html>

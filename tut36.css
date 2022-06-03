@@ -1,0 +1,47 @@
+
+    .container{
+        background-color: rgb(38, 96, 114);
+    }
+    .box{
+        background-color: rgb(99, 56, 180);
+        width: 250px;
+        height: 250px;
+        position: relative; 
+        /* animation-name: Hamza1; */
+        animation-name: Hamza2;
+        animation-duration: 8s;
+        /* animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+     */
+        /* @keyframes Hamza1 {  from{}    to{} } */
+
+    }
+    @keyframes Hamza1{
+        from
+        {width: 250px;}
+        to
+        {width: 100%;} 
+    }
+    @keyframes Hamza2 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 0px;
+            left: 250px;
+        }
+        50%{
+            top: 250px;
+            left:250px;
+        }
+        75%{
+            top:250px;
+            left:0px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
